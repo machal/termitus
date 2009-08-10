@@ -1,0 +1,6 @@
+definition: Struktura typu „poslední dovnitř, první ven“ (LIFO).
+translation: zásobník
+%
+definition: Soubor technologií sestaveným za řešením jednoho problému.
+translation: stack
+comment: Např. Java-stack. Neviděl jsem, že by se někde používalo něco jiného než stack.
