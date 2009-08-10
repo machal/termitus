@@ -1,0 +1,3 @@
+definition: Při použití s HTTP způsob, jak uchovat data mezi jednotlivými požadavky, a tedy navození stavovosti HTTP protokolu.
+translation: sezení, relace, session
+comment: Pro jasnost je někdy lepší nechat původní výraz.
