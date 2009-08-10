@@ -1,0 +1,3 @@
+[submodule "lib/at"]
+	path = lib/at
+	url = git://github.com/jakubkulhan/at.git

@@ -1,0 +1,128 @@
+@index {
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>@title{termitus}</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <h1>
+                termitus<br/>
+                <span>překladový slovník programátorských pojmů</span>
+            </h1>
+            <div class="clearfix">
+                @content {
+                    @letters {
+                        <div class="half">
+                            <h2>@{letter}</h2>
+                            <p>
+                            @terms {
+                                <a href="@{term}.html">@{term}</a>
+                            }
+                            </p>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <div id="ribbon"><a href="http://github.com/jakubkulhan/termitus/"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></div>
+    </body>
+</html>
+}
+
+@term < index {
+    @title{@{term} - termitus}
+    @content {
+        <h2>@{term}</h2>
+        @definitions {
+            <p><em>@{definition}</em></p>
+            <p>překládá se jako <em>@{translation}</em></p>
+            <p class="comment">komentář: <em>@{comment}</em></p>
+            <hr>
+        }
+    }
+}
+
+@style.css {
+    /* RESET */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+    }
+    body {
+            line-height: 1;
+    }
+    ol, ul {
+            list-style: none;
+    }
+    blockquote, q {
+            quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+            content: '';
+            content: none;
+    }
+    :focus {
+            outline: 0;
+    }
+    ins {
+            text-decoration: none;
+    }
+    del {
+            text-decoration: line-through;
+    }
+    table {
+            border-collapse: collapse;
+            border-spacing: 0;
+    }
+
+    /* STYLES */
+    html { font-size: small; }
+    body { text-align: center; padding: 1px;
+        font-size: 107%; color: #888; font-family: sans-serif;
+        background: #fcfcfc; }
+
+            a img { outline: none; border: none; }
+
+            .clearfix:after { content: ".";
+                display: block; height: 0; clear: both;
+                visibility: hidden; }
+            * html .clearfix { zoom: 1; }
+            *:first-child+html .clearfix { zoom: 1; }
+
+            #page { width: 960px; margin: 4em auto; text-align: left; }
+            
+                a { color: #0B8C7B; text-decoration: underline; }
+                a:hover { text-decoration: none; }
+
+                h1 { font-size: 6em; color: #222; }
+                    h1 span { font-size: 0.5em; color: #444;
+                        position: relative; top: -1em; }
+
+                .half { float: left; width: 45%; margin: 0 1em 0 0; padding: 1em; }
+                    h2 { font-size: 150%; margin-bottom: 1em }
+
+                hr { height: 1px; }
+                .half, hr { border: none; border-top: solid #eee 1px; }
+
+                p { padding: 1em; }
+
+
+            #ribbon { position: absolute; top: 0; right: 0; }
+}
