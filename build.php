@@ -91,7 +91,7 @@ foreach (glob($terms_dir . '*') as $_) {
         $data = array();
 
         foreach (explode("\n", $definition) as $line) {
-            list($k, $v) = explode(':', $line);
+            list($k, $v) = explode(':', $line, 2);
             $data[trim($k)] = trim($v);
         }
 
