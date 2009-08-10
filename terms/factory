@@ -1,0 +1,3 @@
+definition: Návrhový vzor říkající, jak se mají vytvářet objekty.
+translation: továrna, továrnička, factory
+comment: Jelikož návrhové vzory si kladou za cíl sjednotit mluvu, doporučuji nepřekládat.
