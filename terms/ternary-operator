@@ -1,0 +1,3 @@
+definition: Operátor mající tři operandy. Většinou je tím myšlen ?: známý z C a odvozených jazyků.
+translation: ternární operátor
+comment: Jednou jsem viděl použit termín „trojný operátor“. Od té doby mám noční můry.
