@@ -1,0 +1,3 @@
+definition: Návrhový vzor, který řeší instancování objektu tak, že v systému by se měl vyskytovat pouze jeden objekt dané třídy.
+translation: singleton, jedináček
+comment: Ne, nepřekládat raděj – hrach
